@@ -11,5 +11,6 @@ func Init(e *echo.Echo) {
 	{
 		g.GET("/popular", api.FetchMostPopularVidoes())
 		g.GET("/video/:id", api.GetVideo())
+		g.GET("/video/:id/related", api.FetchRelatedVideos())
 	}
 }
